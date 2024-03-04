@@ -1,0 +1,28 @@
+General:
+    - Use hace referencia a una carperta. Aunque no entiendas que hace hace algo, asi que no lo quites
+
+
+Resouces:
+    - La carperta /resouces/views contiene todas lñas plantuillas del proyecto que se van a utilizar para la interfaz del usuario
+    - Hay que tener en cuenta quer todos los ficheros que esten en .blade son plantillas que luego laravel interpretara. NO olvidar la extension
+    - Dentro de estas plantillas se encuentra el codigo que vera el cliente en la pagina web
+
+    
+
+
+Routes:
+    - Principalmente solo nos interesa el archivo web.php
+
+    //Este codigo habrira la plantilla ejemplo.blade.php
+    #   Route::get("/", function () {       //usando el metodo get, el primer argumento significa lo que tiene que buscar el usuario para iniciar
+    #   return view("ejemplo");             //Return sirve para devolver contenido de salida a la pagina web. Hay que tener en cuenta que se puede devolver texto o plantillas .blade.php
+    #   });
+
+
+
+
+
+
+
+Videos de referencia:
+    - https://www.youtube.com/watch?v=a-4923Uyu54&t=1038s Aprende laravel 8 en menos de 2h

@@ -14,8 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/", [CrudController::class, "index"])->name("crud.index");
 
+
+Route::get("/", function () {
+    return view("plantilla");
+});
+
+Route::get("/todos", function () {
+    return view("contenido.index");
+});
+
+
+
+/*
+Route::get("/", [CrudController::class, "index"])->name("crud.index");
 //ruta para añadir un nuevo producto
 Route::post("/registrar-producto", [CrudController::class, "create"])->name("crud.create");
 
@@ -24,3 +36,4 @@ Route::post("/modificar-producto", [CrudController::class, "update"])->name("cru
 
 //ruta para eliminar producto
 Route::get("/eliminar-producto-{id}", [CrudController::class, "delete"])->name("crud.delete");
+*/
