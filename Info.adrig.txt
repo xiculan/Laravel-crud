@@ -18,8 +18,26 @@ Routes:
     #   return view("ejemplo");             //Return sirve para devolver contenido de salida a la pagina web. Hay que tener en cuenta que se puede devolver texto o plantillas .blade.php
     #   });
 
+Migraciones:
+    - Las migraciones son basicamente un historial de versiones de la base de datos
+    - Permiten agregar tablas y informacion a la base de datos
+    - Parecen de un solo uso
+
+.env:
+    - Aqui se encuentran las variables de entorno. Recomendado no tocar
+
+Controladores:
+
+    # public function .... (Request $request)
+    # Index     para mostrar todos los datos
+    # store     para guardar un datosupdate para actualizar un datos
+    # destroy   para eliminar un datos
+    # edit      para mostrar formulario de edicion
 
 
+    #   $request->validate([
+    #        'title' => 'required|min:3'     //si no se complen los requerimientos dara un error
+    #    ])
 
 
 
